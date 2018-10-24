@@ -1,29 +1,38 @@
-<div class="home_background" style="height: 90%; width: 100%;">
+<div class="home_background" style="height: 85%; width: 100%;">
     <div class="row first_row">
         <div class="col-md-4 offset-md-1">
-            <p class="intro">
-                Envie de changement, d'une nouvelle déco ?<br>
-                Vous n'avez pas le temps de vous en occuper, ou pas envie, contactez moi.<br>
-                Vous avez acheté une maison, un appartement, un gîte, et vous avez besoin d'aide pour le décorer :<br>
-                coordonner les couleurs, choisir lumières, accessoiriser...
-                Vous vendez votre bien et vous souhaitez le vendre rapidement et au meilleur prix ?<br>
-                Quel que soit votre budget et votre projet, Violaine POMARET, spécialiste de la décoration d'intérieur,
-                vous accompagne tout au long de votre projet.<br>
-
-            </p>
+            <div class="intro-parent">
+                <div class="intro-child">
+                    <p class="intro">
+                        <strong>
+                            Envie de changement, d'une nouvelle déco ?<br>
+                            Vous n'avez pas le temps de vous en occuper, ou pas envie, contactez moi.<br>
+                            Vous avez acheté une maison, un appartement, un gîte, et vous avez besoin d'aide pour le
+                            décorer
+                            :<br>
+                            coordonner les couleurs, choisir lumières, accessoiriser...
+                            Vous vendez votre bien et vous souhaitez le vendre rapidement et au meilleur prix ?<br>
+                            Quel que soit votre budget et votre projet, Violaine POMARET, spécialiste de la décoration
+                            d'intérieur,
+                            vous accompagne tout au long de votre projet.<br>
+                        </strong>
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="carousel-wrapper col-md-4 offset-md-2">
-            <ul rn-carousel rn-carousel-index="carouselIndex" rn-carousel-controls-allow-loop
+            <ul rn-carousel rn-carousel-index="carouselIndex" rn-carousel-auto-slide
                 class="image carousel_articles">
                 <li ng-repeat="article in articles">
-                    <div class="img-carousel" ng-style="{'background-image':'url({{article.thumb}})'}"></div>
-                    <div class="carousel-title layer">{{ article.title }}</div>
-                    <div class="article-text">{{article.text | limitTo : 100 : 0}}</div>
+                    <div class="img-carousel" ng-style="{'background-image':'url(img/articles/{{article.idarticle}}/{{article.thumb}})'}"></div>
+                    <div class="carousel-title layer" ui-sref="article({id: article.idarticle})">{{ article.title }}</div>
+                    <div class="article-carousel-text">{{article.text | limitTo : 100 : 0}}<span ng-if="article.text.length > 100">...</span></div>
                 </li>
+                <div class="index-carousel col-md-4 offset-md-4" rn-carousel-indicators ng-if="articles.length > 1"
+                     slides="articles"
+                     rn-carousel-index="carouselIndex"></div>
             </ul>
-            <div class="index-carousel col-md-4 offset-md-4" rn-carousel-indicators ng-if="articles.length > 1"
-                 slides="articles"
-                 rn-carousel-index="carouselIndex"></div>
+
         </div>
 
     </div>
@@ -47,7 +56,55 @@
             <div class="col col-md-5 col-forfait">
                 <div class="col-forfait-container">
                     <p class="p-forfait">
-                        <strong>90€</strong>
+                        <span class="price">90€</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="forfaits-title col offset-md-1 col-md-11">
+            <h2>OPTIONS : Devis <strong>gratuit</strong> après visite conseil</h2>
+        </div>
+        <div class="row forfait-row" style="width: 100%;height: 100px;">
+            <div class="col col-md-10 offset-md-1 col-forfait">
+                <div class="col-forfait-container">
+                    <p class="p-forfait">
+                        VISITE COMPLÉMENTAIRE AVEC RAPPORTS + DESSIN EN 3D ET CROQUIS, PLANCHES, PLAN.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row forfait-row" style="width: 100%;height: 100px;">
+            <div class="col col-md-10 offset-md-1 col-forfait">
+                <div class="col-forfait-container">
+                    <p class="p-forfait">
+                        SUIVI TRAVAUX (si intervention artisan : électricien, plombier...)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row forfait-row" style="width: 100%;height: 100px;">
+            <div class="col col-md-10 offset-md-1 col-forfait">
+                <div class="col-forfait-container">
+                    <p class="p-forfait">
+                        SHOPPING + MISE EN PLACE
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row forfait-row" style="width: 100%;height: 100px;">
+            <div class="col col-md-5 offset-md-1 col-forfait">
+                <div class="col-forfait-container">
+                    <p class="p-forfait">
+                        HOME STAGING : utilisation de certains meubles existants, customisation, mise en valeur...
+                    </p>
+                </div>
+            </div>
+            <div class="col col-md-5 col-forfait">
+                <div class="col-forfait-container">
+                    <p class="p-forfait" style="text-align: center">
+                        <strong>Selon votre budget et superficie<br></strong>
+                        <strong>OU<br></strong>
+                        <strong>1 à 2% de la valeur du bien pour une vente<br></strong>
                     </p>
                 </div>
             </div>

@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb0fa835-6ac2-48ac-8366-d038de654750" name="Default" comment="" />
+    <list default="true" id="bb0fa835-6ac2-48ac-8366-d038de654750" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/articleController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/createArticleController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/save_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/article.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BilbaoDeco" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/homeController.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/homeController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/homeFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/articleFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/loginController.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/loginController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,41 +51,71 @@
       <file leaf-file-name="loginController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/loginController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+            <state relative-caret-position="459">
+              <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/adminController.js">
+      <file leaf-file-name="createArticleController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/createArticleController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/create.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="101" selection-start-line="29" selection-start-column="101" selection-end-line="29" selection-end-column="101" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-line="2" selection-end-column="3" />
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeFactory.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/homeFactory.js">
+      <file leaf-file-name="db.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="38" selection-start-column="38" selection-end-column="38" />
+            <state relative-caret-position="431">
+              <caret line="155" column="48" lean-forward="true" selection-start-line="155" selection-start-column="48" selection-end-line="155" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/homeController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="save_form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/save_form.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
@@ -73,48 +126,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="110" selection-start-column="110" selection-end-column="110" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/db.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="65" column="152" selection-start-line="65" selection-start-column="148" selection-end-line="65" selection-end-column="152" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="101" selection-start-line="3" selection-start-column="101" selection-end-line="3" selection-end-column="101" />
+            <state relative-caret-position="391">
+              <caret line="23" column="84" selection-start-line="23" selection-start-column="84" selection-end-line="23" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -124,16 +137,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.success</find>
-      <find>mysql</find>
-      <find>success</find>
       <find>.succes</find>
       <find>connect</find>
       <find>ngRoute</find>
@@ -149,6 +159,21 @@
       <find>#FFF</find>
       <find>d7ffd7</find>
       <find>text-blur-out</find>
+      <find>intro</find>
+      <find>border</find>
+      <find>nav</find>
+      <find>article</find>
+      <find>red</find>
+      <find>.logo</find>
+      <find>first</find>
+      <find>carou</find>
+      <find>firs</find>
+      <find>logo</find>
+      <find>li</find>
+      <find>font-fam</find>
+      <find>font-family: 'Merriweather Sans', sans-serif;</find>
+      <find>$root</find>
+      <find>$rootScope.isLo</find>
     </findStrings>
     <replaceStrings>
       <replace>mysqli</replace>
@@ -156,6 +181,9 @@
       <replace>#FFF</replace>
       <replace>000</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -169,19 +197,25 @@
         <option value="$PROJECT_DIR$/js/appController.js" />
         <option value="$PROJECT_DIR$/angular_example.html" />
         <option value="$PROJECT_DIR$/templates/admin.html" />
-        <option value="$PROJECT_DIR$/js/loginController.js" />
-        <option value="$PROJECT_DIR$/js/adminController.js" />
         <option value="$PROJECT_DIR$/model/Article.php" />
         <option value="$PROJECT_DIR$/js/lib/homeController.js" />
-        <option value="$PROJECT_DIR$/js/homeFactory.js" />
-        <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/js/homeController.js" />
-        <option value="$PROJECT_DIR$/config/routes.js" />
-        <option value="$PROJECT_DIR$/php/db.php" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/js/adminController.js" />
+        <option value="$PROJECT_DIR$/js/homeFactory.js" />
+        <option value="$PROJECT_DIR$/js/articleController.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
+        <option value="$PROJECT_DIR$/templates/create.html" />
+        <option value="$PROJECT_DIR$/js/articleFactory.js" />
+        <option value="$PROJECT_DIR$/js/homeController.js" />
+        <option value="$PROJECT_DIR$/templates/article.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/php/save_form.php" />
+        <option value="$PROJECT_DIR$/templates/home.html" />
+        <option value="$PROJECT_DIR$/config/routes.js" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/js/createArticleController.js" />
+        <option value="$PROJECT_DIR$/js/loginController.js" />
+        <option value="$PROJECT_DIR$/php/db.php" />
       </list>
     </option>
   </component>
@@ -194,10 +228,12 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1087" />
+    <option name="x" value="43" />
+    <option name="y" value="-8" />
+    <option name="width" value="1694" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -210,6 +246,42 @@
             <path>
               <item name="BilbaoDeco" type="b2602c69:ProjectViewProjectNode" />
               <item name="BilbaoDeco" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BilbaoDeco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilbaoDeco" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BilbaoDeco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilbaoDeco" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BilbaoDeco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilbaoDeco" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BilbaoDeco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilbaoDeco" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BilbaoDeco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilbaoDeco" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BilbaoDeco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilbaoDeco" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BilbaoDeco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilbaoDeco" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="BilbaoDeco" type="b2602c69:ProjectViewProjectNode" />
@@ -235,18 +307,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.html" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Workspace\htdocs\BilbaoDeco\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Workspace\htdocs\BilbaoDeco\js" />
       <recent name="E:\Workspace\htdocs\BilbaoDeco\php" />
       <recent name="E:\Workspace\htdocs\BilbaoDeco\config" />
       <recent name="E:\Workspace\htdocs\BilbaoDeco\js\lib" />
       <recent name="E:\Workspace\htdocs\BilbaoDeco" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace\htdocs\BilbaoDeco\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -261,6 +334,22 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="JavaScript Debug.localhost">
+    <configuration name="" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="63342" />
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="63342" />
+    <configuration name="Unnamed" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost/BilbaoDeco/index.html" />
+    <configuration name="localhost" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost/" />
+    <list>
+      <item itemvalue="Attach to Node.js/Chrome." />
+      <item itemvalue="JavaScript Debug.Unnamed" />
+      <item itemvalue="JavaScript Debug.localhost" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.localhost" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -273,29 +362,39 @@
       <updated>1536571282555</updated>
       <workItem from="1536571287507" duration="101000" />
       <workItem from="1536571418864" duration="22514000" />
-      <workItem from="1536857327439" duration="14414000" />
+      <workItem from="1536857327439" duration="15006000" />
+      <workItem from="1539277264048" duration="828000" />
+      <workItem from="1539279478139" duration="450000" />
+      <workItem from="1539279946794" duration="11157000" />
+      <workItem from="1539442980257" duration="288000" />
+      <workItem from="1539713940241" duration="1548000" />
+      <workItem from="1539950424287" duration="2911000" />
+      <workItem from="1540292058045" duration="23291000" />
+      <workItem from="1540383841269" duration="236000" />
+      <workItem from="1540384100984" duration="1860000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37029000" />
+    <option name="totallyTimeSpent" value="80190000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18020834" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26012793" />
+      <window_info anchor="bottom" id="Statistic" weight="0.32897604" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.20636663" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -311,7 +410,89 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/createArticleController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loginController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/adminController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/articleFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/homeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="110" selection-start-column="110" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="152" selection-start-line="65" selection-start-column="148" selection-end-line="65" selection-end-column="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="101" selection-start-line="3" selection-start-column="101" selection-end-line="3" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/loginController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -326,7 +507,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/homeFactory.js">
+    <entry file="file://$PROJECT_DIR$/js/articleFactory.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="38" selection-start-column="38" selection-end-column="38" />
@@ -358,10 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -398,9 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/lib/ui-bootstrap-tpls-0.10.0.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/angular-route/angular-route.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -416,24 +590,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/appController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -445,59 +605,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/angular-ui-carousel/dist/ui-carousel.js" />
-    <entry file="file://$PROJECT_DIR$/config/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/lib/angular.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="199" column="441" selection-start-line="199" selection-start-column="441" selection-end-line="199" selection-end-column="441" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/lib/angular.min.js.map">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/homeController.js">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/structural.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/loginController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/adminController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/homeFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="110" selection-start-column="110" selection-end-column="110" />
+        <state relative-caret-position="180">
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -508,14 +626,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/db.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/meta.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="65" column="152" selection-start-line="65" selection-start-column="148" selection-end-line="65" selection-end-column="152" />
+        <state relative-caret-position="180">
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/articleController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/ng-file-upload/dist/ng-file-upload-shim.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/appController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/homeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/articleFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="109" selection-start-line="6" selection-start-column="109" selection-end-line="6" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/adminController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/save_form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
@@ -524,19 +719,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
+        <state relative-caret-position="391">
+          <caret line="23" column="84" selection-start-line="23" selection-start-column="84" selection-end-line="23" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="101" selection-start-line="29" selection-start-column="101" selection-end-line="29" selection-end-column="101" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/js/createArticleController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+        <state relative-caret-position="85">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loginController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="155" column="48" lean-forward="true" selection-start-line="155" selection-start-column="48" selection-end-line="155" selection-end-column="48" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,17 @@
+<div class="article-view">
+    <div class="col-md-10 offset-1">
+        <div class="intro-parent">
+            <div class="intro-child">
+                <div class="article-container">
+                    <h2>{{article.title}}</h2>
+                    <img class="article-detail-img" src="img/articles/{{article.idarticle}}/{{article.thumb}}">
+                    <div class="article-detail-text" ng-bind-html="article.text"></div>
+                    <div class="article-credits">
+                        <p>{{article.author}} - {{article.date | date : 'EEEE dd MMMM yyyy - HH:mm'}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

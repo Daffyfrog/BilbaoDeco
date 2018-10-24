@@ -1,0 +1,61 @@
+<div class="intro-parent">
+    <div class="intro-child" style="background-color: #e1e3e8;">
+        <form name="myForm" class="form-horizontal article-form">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Écrire un article</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="Titre">Titre</label>
+                    <div class="col-md-5">
+                        <input id="Titre" ng-required="true" name="Titre" type="text" placeholder="Titre"
+                               class="form-control input-md" ng-model="article.title">
+
+                    </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="contenu">Contenu</label>
+                    <div class="col-md-12">
+                        <textarea ng-required="true" class="form-control" id="contenu" name="contenu" ng-model="article.text"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="auteur">Auteur</label>
+                    <div class="col-md-5">
+                        <input id="auteur" ng-required="true" ng-model="article.auteur" name="Auteur" type="text"
+                               class="form-control input-md" >
+
+                    </div>
+                </div>
+                <!-- File Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="image">Image</label>
+                    <div class="col-md-4">
+                        <img ng-show="myForm.file.$valid" ngf-thumbnail="picFile" class="thumb" style="max-width: 100px"/>
+                        <input type="file" ngf-select ng-model="picFile" id="image" name="image"
+                               accept="image/*" ngf-max-size="2MB" required
+                               ngf-model-invalid="errorFile">
+                        <i ng-show="myForm.file.$error.required">*required</i><br>
+                        <i ng-show="myForm.file.$error.maxSize">File too large
+                            {{errorFile.size / 1000000|number:1}}MB: max 2M</i>
+                        <button ng-click="picFile = null" ng-show="picFile">Annuler</button>
+                        <br>
+                </div>
+
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="submit"></label>
+                    <div class="col-md-4">
+                        <button id="submit" ng-disabled="!myForm.$valid" ng-click="save(picFile)" name="submit" class="btn btn-success">Enregistrer</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</div>

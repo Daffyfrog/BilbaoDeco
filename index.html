@@ -2,6 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
     <base href="/">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -14,46 +17,114 @@
     <script src="js/lib/ui-bootstrap-tpls-0.10.0.min.js"></script>
 
     <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+    <script src="node_modules/angular-i18n/angular-locale_fr-fr.js"></script>
     <script src="node_modules/angular-route/angular-route.js"></script>
     <script src="node_modules/angular-touch/angular-touch.js"></script>
     <script src="node_modules/angular-carousel/dist/angular-carousel.js"></script>
+    <script src="node_modules/ng-file-upload/dist/ng-file-upload.js"></script>
 
     <script src="js/app.js"></script>
     <script src="config/routes.js"></script>
 
 
-
     <!-- CONTROLLERS -->
     <script src="js/appController.js"></script>
+    <script src="js/articleController.js"></script>
+    <script src="js/createArticleController.js"></script>
     <script src="js/loginController.js"></script>
     <script src="js/homeController.js"></script>
 
     <!-- FACTORIES -->
 
-    <script src="js/homeFactory.js"></script>
-
+    <script src="js/articleFactory.js"></script>
 
 
 </head>
 
-<body  ng-app="bilbaoDecoApp">
+<body ng-app="bilbaoDecoApp">
 <nav>
     <ul>
-        <img class="logo" src="img/logo.png"/>
-
         <li>
-            <a href="#">Home</a>
+            <div class="intro-parent">
+                <div class="intro-child">
+                    <img class="logo" src="img/logo.png"/>
+                </div>
+            </div>
         </li>
         <li>
-            <a href="#">Blog</a>
-        <li>
-            <a href="#">About</a>
+            <div class="intro-parent">
+                <div class="intro-child">
+                    <a ui-sref="accueil">Accueil</a>
+                </div>
+            </div>
         </li>
         <li>
-            <a href="#">Contact</a>
+            <div class="intro-parent">
+                <div class="intro-child">
+                    <a ui-sref="article({id: '1'})">Coaching Déco</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="intro-parent">
+                <div class="intro-child">
+                    <a href="#">Home Staging</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="intro-parent">
+                <div class="intro-child">
+                    <a href="#">Relooking</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="intro-parent">
+                <div class="intro-child">
+                    <a href="#">Réalisations</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="intro-parent">
+                <div class="intro-child">
+                    <a href="#">Tarifs</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="intro-parent">
+                <div class="intro-child">
+                    <a href="#">Contact</a>
+                </div>
+            </div>
         </li>
     </ul>
 </nav>
 <ui-view></ui-view>
+<footer class="footer-basic-centered">
+    <p class="footer-company-motto">Bilbao Déco</p>
+
+    <p class="footer-links">
+        <a href="#">Accueil</a>
+        ·
+        <a href="#">Coaching Déco</a>
+        ·
+        <a href="#">Home Staging</a>
+        ·
+        <a href="#">Relooking</a>
+        ·
+        <a href="#">Réalisations</a>
+        ·
+        <a href="#">Tarifs</a>
+        ·
+        <a href="#">Contact</a>
+    </p>
+
+    <p class="footer-company-name">Violaine POMARET - Bilbao Déco &copy; 2018</p>
+    <p class="footer-company-name">Nicolas ALRIC · Développement</p>
+
+</footer>
 </body>
 </html>

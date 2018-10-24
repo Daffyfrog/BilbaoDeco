@@ -3,8 +3,8 @@ ini_set('display_startup_errors',1);
 ini_set('display_errors',1);
 error_reporting(-1);
 $host = "localhost";
-$user = "root";
-$pass = "";
+$user = "kayou";
+$pass = "patate";
 $database = "bilbaodeco";
 if($con = mysqli_connect($host, $user, $pass, $database, 3306)){
     mysqli_select_db($con, $database);
@@ -22,10 +22,16 @@ if($con = mysqli_connect($host, $user, $pass, $database, 3306)){
 
 switch($_GET['action'])  {
     case 'login' :
-            login($con);
-            break;
+        login($con);
+        break;
     case 'getArticles':
         getArticles($con);
+        break;
+    case 'getArticleById' :
+        getArticleById($con);
+        break;
+    case 'insertArticle':
+        insertArticle($con);
         break;
 }
 
@@ -55,10 +61,37 @@ function login($con){
     }
 }
 
+function getArticleById($con){
+    $data = json_decode(file_get_contents("php://input"));
+    $article_id = $data->article_id;
+    $article = [];
+    try{
+        $query = 'SELECT * FROM article WHERE idarticle = ' . $article_id . ';';
+        $query_res = mysqli_query($con, $query);
+        if($donnees = mysqli_fetch_assoc($query_res))
+        {
+            $article = [
+            'idarticle' => $donnees['idarticle'],
+            'title' => $donnees['title'],
+            'date' => $donnees['date'],
+            'text' => $donnees['text'],
+            'author' => $donnees['author'],
+            'thumb' => $donnees['thumb']
+            ];
+
+
+        }
+        mysqli_free_result($query_res);
+        print_r(json_encode($article));
+    } catch (Exception $e){
+        error_log($e);
+    }
+}
+
 function getArticles($con){
     $data = json_decode(file_get_contents("php://input"));
     try{
-        $query = 'SELECT * FROM article limit 5;';
+        $query = 'SELECT * FROM article WHERE ispage != 1 limit 5;';
         $query_res = mysqli_query($con, $query);
         $articles = [];
         while($donnees = mysqli_fetch_assoc($query_res))
@@ -71,8 +104,71 @@ function getArticles($con){
         error_log($e);
     }
 }
-
-
+function getPages($con){
+    $data = json_decode(file_get_contents("php://input"));
+    try{
+        $query = 'SELECT * FROM article WHERE ispage = 1 limit 5;';
+        $query_res = mysqli_query($con, $query);
+        $articles = [];
+        while($donnees = mysqli_fetch_assoc($query_res))
+        {
+            $articles[] = array('idarticle' => $donnees['idarticle'], 'title' => $donnees['title'], 'date' => $donnees['date'], 'text' => $donnees['text'], 'author' => $donnees['author'], 'thumb' => $donnees['thumb']);
+        }
+        mysqli_free_result($query_res);
+        print_r(json_encode($articles));
+    } catch (Exception $e){
+        error_log($e);
+    }
+}
+function insertArticle($con){
+    $data = json_decode(file_get_contents("php://input"));
+    $title = $data->title;
+    $text = $data->text;
+    $file_name = $data->file_name;
+    $author = $data->author;
+    try{
+        $query = 'INSERT INTO article (title, text, thumb, date, author, ispage) values ("' . $title . '","' . $text . '","' . $file_name . '","'. date("Y-m-d H:i:s") . '","'. $author . '",0)';
+        $query_res = mysqli_query($con, $query);
+        if ($query_res) {
+            $arr = array('msg' => "Ajout de l'article effectué !", 'error' => '', 'id' => mysqli_insert_id($con));
+            $jsn = json_encode($arr);
+            // print_r($jsn);
+        }
+        else {
+            $arr = array('msg' => "", 'error' => 'Error In inserting record');
+            $jsn = json_encode($arr);
+            // print_r($jsn);
+        }
+        print_r($jsn);
+    } catch (Exception $e){
+        error_log($e);
+    }
+}
+function editArticle($con){
+    $data = json_decode(file_get_contents("php://input"));
+    $id = $data->id
+    $title = $data->title;
+    $text = $data->text;
+    $file_name = $data->file_name;
+    $author = $data->author;
+    try{
+        $query = 'UPDATE article SET title = "' . $title. '", text = "' . $text. '", thumb, date, author) values ("' . $title . '","' . $text . '","' . $file_name . '","'. date("Y-m-d H:i:s") . '","'. $author . '",0)';
+        $query_res = mysqli_query($con, $query);
+        if ($query_res) {
+            $arr = array('msg' => "Ajout de l'article effectué !", 'error' => '', 'id' => mysqli_insert_id($con));
+            $jsn = json_encode($arr);
+            // print_r($jsn);
+        }
+        else {
+            $arr = array('msg' => "", 'error' => 'Error In inserting record');
+            $jsn = json_encode($arr);
+            // print_r($jsn);
+        }
+        print_r($jsn);
+    } catch (Exception $e){
+        error_log($e);
+    }
+}
 /*
 function add_product() {
     $data = json_decode(file_get_contents("php://input")); 
@@ -89,7 +185,7 @@ function add_product() {
         $arr = array('msg' => "Product Added Successfully!!!", 'error' => '');
         $jsn = json_encode($arr);
         // print_r($jsn);
-    } 
+    }
     else {
         $arr = array('msg' => "", 'error' => 'Error In inserting record');
         $jsn = json_encode($arr);

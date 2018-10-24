@@ -1,11 +1,8 @@
-bilbaoDecoApp.controller('loginController', function ($scope, $http, $rootScope) {
+bilbaoDecoApp.controller('loginController', function ($scope, $http, $rootScope, $state) {
     $scope.vm = {
         login : "",
         password: ""
     };
-    /** function to delete product from list of product referencing php **/
-
-
     $scope.loginAdmin = function () {
         $http.post('php/db.php?action=login',
             {
@@ -15,7 +12,12 @@ bilbaoDecoApp.controller('loginController', function ($scope, $http, $rootScope)
         ).then(function success(data, status, headers, config) {
             console.log(data.data);
             alert(data.data.login_ok);
-            $rootScope.isLogged = true;
+            if(!data.data.login_ok){
+                alert("Identifiants incorrects");
+            } else {
+                $rootScope.setLogged('true');
+                $state.go("create", {'isLogged': true})
+            }
         }, function error(data, status, headers, config) {
             error("Err ?")
         });
